@@ -29,4 +29,8 @@ export default function AboutPage() {
       </p>
     </section>
   );
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 3e0b118 (about sayfası güncellendi)

@@ -15,3 +15,20 @@ export default function AboutPage() {
     </section>
   );
 }
+
+"// Bu sayfa, UzunYolcu'nun kurucusu hakkında bilgi vermek için tasarlanmıştır.
+// Kuzey Seyda Uzun, yazılım geliştirici ve dijital içerik üreticisi olarak, öğrenmeyi ve öğretmeyi seven birisidir.
+// Amacı, sade ve güvenilir kaynaklar sunarak bilgiyi herkes için erişilebilir kılmaktır.
+// LinkedIn üzerinden takip edebilir, her türlü öneri ve iletişim için e-posta   gönderebilirsiniz.
+// Bu sayfa, kullanıcıların UzunYolcu'nun arkasındaki kişiyi tanımasına yardımcı olmak için oluşturulmuştur.
+// Sayfa, sade bir tasarıma sahip olup, kullanıcı dostu bir deneyim sun maktadır.
+// Ayrıca, kullanıcıların UzunYolcu ile iletişim kurmasını kolaylaştırmak için "
+// iletişim bilgileri de sağlanmıştır.
+// Sayfa, kullanıcıların UzunYolcu'nun misyonunu ve vizyonunu anlamalarına yardımcı olmak için oluşturulmuştur.
+// Bu sayfa, kullanıcıların UzunYolcu'nun arkasındaki kişiyi tanımasına yardımcı olmak için oluşturulmuştur.
+// Sayfa, sade bir tasarıma sahip olup, kullanıcı dostu bir deneyim sunmaktadır.
+// Ayrıca, kullanıcıların UzunYolcu ile iletişim kurmasını kolaylaştırmak için iletişim bilgileri de sağlanmıştır.
+// Sayfa, kullanıcıların UzunYolcu'nun misyonunu ve vizyonunu anlamalarına yardımcı olmak için oluşturulmuştur.
+// Bu sayfa, UzunYolcu'nun kurucusu hakkında bilgi vermek için tasarlanmıştır.
+// Kuzey Seyda Uzun, yazılım geliştirici ve dijital içerik üreticisi olarak, öğrenmeyi ve öğretmeyi seven birisidir.
+// Amacı, sade ve güvenilir kaynaklar sunarak bilgiyi herkes için erişilebilir kılmaktır.

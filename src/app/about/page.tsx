@@ -6,30 +6,30 @@ export default function AboutPage() {
       {/* Uzun Yolcu Hakkında */}
       <div className="mb-8">
         <p className="mb-4 text-lg text-gray-200">
-          <strong>Uzun Yolcu</strong>, hayatın her alanında rehberlik sunmak, bilgiye ulaşımı kolaylaştırmak ve ilham vermek amacıyla kuruldu. Burada, sadece kuru bilgiler değil; hayatınızı gerçekten iyileştirecek, size yön gösterecek, modern ve güvenilir içerikler bulacaksınız. 
+          {`Uzun Yolcu, hayatın her alanında rehberlik sunmak, bilgiye ulaşımı kolaylaştırmak ve ilham vermek amacıyla kuruldu. Burada sadece kuru bilgiler değil; hayatınızı gerçekten iyileştirecek, size yön gösterecek, modern ve güvenilir içerikler bulacaksınız.`}
         </p>
         <ul className="list-disc list-inside text-gray-300 mb-4 space-y-1">
           <li>
-            <strong>İslam Rehberi:</strong> Elifba'dan Kuran-ı Kerim'e, peygamberlerin hayatından dua ve zikirlere kadar her yaştan okura özel, derin ve anlaşılır içerikler.
+            <strong>İslam Rehberi:</strong> {`Elifba'dan Kuran-ı Kerim'e, peygamberlerin hayatından dua ve zikirlere kadar her yaştan okura özel, derin ve anlaşılır içerikler.`}
           </li>
           <li>
-            <strong>İngilizce Akademi:</strong> Seviyene uygun interaktif başlıklar, konuşma pratikleri, telaffuz ve günlük konuşma rehberleriyle İngilizceyi çok kolay ve eğlenceli şekilde öğrenebilirsin.
+            <strong>İngilizce Akademi:</strong> {`Seviyene uygun interaktif başlıklar, konuşma pratikleri, telaffuz ve günlük konuşma rehberleriyle İngilizceyi çok kolay ve eğlenceli şekilde öğrenebilirsin.`}
           </li>
           <li>
-            <strong>Masa Başı Sağlık:</strong> Evde egzersiz, sağlıklı beslenme, postür düzeltme, göz sağlığı ve stres yönetimiyle, uzun saatler oturanlara özel sağlık çözümleri.
+            <strong>Masa Başı Sağlık:</strong> {`Evde egzersiz, sağlıklı beslenme, postür düzeltme, göz sağlığı ve stres yönetimiyle, uzun saatler oturanlara özel sağlık çözümleri.`}
           </li>
           <li>
-            <strong>40+ Yaşam Rehberi:</strong> Yaş almanın getirdiği tüm fırsat ve zorluklara özel, aktif yaşam, beslenme, kadın ve erkek sağlığı, sosyal etkinlikler ve zihinsel gelişim önerileri.
+            <strong>40+ Yaşam Rehberi:</strong> {`Yaş almanın getirdiği tüm fırsat ve zorluklara özel, aktif yaşam, beslenme, kadın ve erkek sağlığı, sosyal etkinlikler ve zihinsel gelişim önerileri.`}
           </li>
           <li>
-            <strong>Kendini Geliştir:</strong> Kariyer, popüler meslekler, online eğitimler ve kişisel gelişim rehberleriyle, hayat boyu öğrenmek ve gelişmek isteyenlere ilham kaynağı!
+            <strong>Kendini Geliştir:</strong> {`Kariyer, popüler meslekler, online eğitimler ve kişisel gelişim rehberleriyle, hayat boyu öğrenmek ve gelişmek isteyenlere ilham kaynağı!`}
           </li>
           <li>
-            <strong>Online Gelir:</strong> E-ticaret, pazaryerleri, YouTube, dijital pazarlama, yapay zeka araçları ve freelance işlerle, bulunduğun yerden para kazanmanın akıllı yolları.
+            <strong>Online Gelir:</strong> {`E-ticaret, pazaryerleri, YouTube, dijital pazarlama, yapay zeka araçları ve freelance işlerle, bulunduğun yerden para kazanmanın akıllı yolları.`}
           </li>
         </ul>
         <p className="text-gray-300 mb-2">
-          Uzun Yolcu, her yaştan ve her meslekten insanın kendi yolculuğunda güvenle başvurabileceği, tarafsız, güncel ve samimi bir rehber platformudur. Amacımız, bilgiye ulaşırken sizi yalnız bırakmamak, hayatınızı kolaylaştırmak ve daha nitelikli bir yolculuk sunmaktır.
+          {`Uzun Yolcu, her yaştan ve her meslekten insanın kendi yolculuğunda güvenle başvurabileceği, tarafsız, güncel ve samimi bir rehber platformudur. Amacımız, bilgiye ulaşırken sizi yalnız bırakmamak, hayatınızı kolaylaştırmak ve daha nitelikli bir yolculuk sunmaktır.`}
         </p>
       </div>
 
@@ -37,23 +37,40 @@ export default function AboutPage() {
       <div>
         <h3 className="text-2xl font-bold text-sky-300 mb-4">Kuzey Uzun Kimdir?</h3>
         <p className="mb-4 text-gray-200">
-          Ben Kuzey Uzun. Eğitim yolculuğumda beş farklı üniversite bitirdim; çok yönlü ve çok disiplinli bir bakış açısına sahibim. Edindiğim akademik altyapı, analitik düşünme ve sürekli öğrenme tutkumla birleşerek, iş hayatında da bana büyük avantajlar sağladı.
+          {`Ben Kuzey Uzun. Eğitim yolculuğumda beş farklı üniversite programı tamamladım; çok yönlü ve çok disiplinli bir bakış açısına sahibim. Aşağıda eğitim ve iş deneyimlerime dair detayları bulabilirsiniz:`}
+        </p>
+        <ul className="list-disc list-inside text-gray-300 mb-4 space-y-1">
+          <li>
+            {`Anadolu University – Bachelor's degree, Management Information Systems`}
+          </li>
+          <li>
+            {`Istanbul University – Bachelor's degree, Business Administration`}
+          </li>
+          <li>
+            {`Atatürk Üniversitesi – Bachelor's degree, Advertising`}
+          </li>
+          <li>
+            {`Anadolu University – Associate's degree, Web Development`}
+          </li>
+          <li>
+            {`Anadolu University – Associate's degree, Retail Management`}
+          </li>
+        </ul>
+        <p className="mb-4 text-gray-200">
+          {`İş yaşamımda Türkiye'nin önde gelen kurumlarında ve farklı sektörlerde önemli görevler üstlendim. Özellikle PttAVM'de Kıdemli Kategori Yöneticisi, Segovin Tekstil'de Export Sales Marketing Manager olarak stratejik planlamadan kategori yönetimine, satış ve pazarlamadan proje yönetimine kadar birçok alanda tecrübe kazandım. Ayrıca dijitalleşme, inovasyon, müşteri deneyimi ve sürekli gelişim odaklı projelerde aktif rol aldım.`}
         </p>
         <p className="mb-4 text-gray-200">
-          İş yaşamımda Türkiye'nin önde gelen kurumlarında ve farklı sektörlerde önemli görevler üstlendim. <strong>PttAVM</strong>'de <span className="text-emerald-200 font-semibold">Kıdemli Kategori Yöneticisi</span>, <strong>Segovin Tekstil</strong>'de <span className="text-emerald-200 font-semibold">Export Sales Marketing Manager</span> olarak stratejik planlamadan kategori yönetimine, satış ve pazarlamadan proje yönetimine kadar birçok alanda tecrübe kazandım. Ayrıca dijitalleşme, inovasyon, müşteri deneyimi ve sürekli gelişim odaklı projelerde aktif rol aldım.
-        </p>
-        <p className="mb-4 text-gray-200">
-          Farklı disiplinlerden beslenen bu yolculukta, eğitim, kişisel gelişim, sağlık, teknoloji ve manevi yaşam gibi alanlarda, hayatı kolaylaştıran ve geliştiren içerikler üretmeyi misyon edindim. Uzun Yolcu'yu kurarken amacım, kendi gelişim yolculuğumdan aldığım ilhamı ve tecrübeleri herkesle paylaşmak, insanların hayatına değer katacak samimi ve güvenilir bir rehber ortamı sunmaktı.
+          {`Farklı disiplinlerden beslenen bu yolculukta, eğitim, kişisel gelişim, sağlık, teknoloji ve manevi yaşam gibi alanlarda hayatı kolaylaştıran ve geliştiren içerikler üretmeyi misyon edindim. Uzun Yolcu'yu kurarken amacım, kendi gelişim yolculuğumdan aldığım ilhamı ve tecrübeleri herkesle paylaşmak, insanların hayatına değer katacak samimi ve güvenilir bir rehber ortamı sunmaktı.`}
         </p>
         <p className="mb-4 text-gray-300">
-          Her zaman öğrenmeye, üretmeye ve paylaşmaya açık bir yolcuyum. Sizi de bu yolculukta yanımda görmekten mutluluk duyarım.
+          {`Her zaman öğrenmeye, üretmeye ve paylaşmaya açık bir yolcuyum. Sizi de bu yolculukta yanımda görmekten mutluluk duyarım.`}
         </p>
         <div className="mb-3">
           <a
             href="https://www.linkedin.com/in/kuzeyseydauzun/"
             className="text-sky-400 hover:underline"
             target="_blank"
-            rel="noopener noreferrer" // noreferrer eklendi
+            rel="noopener"
           >
             LinkedIn Profilim
           </a>

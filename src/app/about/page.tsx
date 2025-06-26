@@ -53,7 +53,7 @@ export default function AboutPage() {
             href="https://www.linkedin.com/in/kuzeyseydauzun/"
             className="text-sky-400 hover:underline"
             target="_blank"
-            rel="noopener"
+            rel="noopener noreferrer" // noreferrer eklendi
           >
             LinkedIn Profilim
           </a>

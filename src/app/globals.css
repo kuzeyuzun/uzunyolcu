@@ -3,33 +3,29 @@
 @tailwind utilities;
 
 body {
-  background: #171923; /* Koyu arka plan */
-  color: #f1f5f9; /* Açık metin */
+  background: #171923;
+  color: #f1f5f9;
   transition: background 0.3s, color 0.3s;
 }
 
 a {
-  color: #38bdf8; /* Tailwind sky-400, modern mavi */
+  color: #38bdf8;
   transition: color 0.2s, border-bottom 0.2s;
   border-bottom: 1px dashed transparent;
   text-decoration: none;
 }
-
 a:hover, a:focus {
-  color: #f472b6;   /* Tailwind pink-400, hover efekti */
+  color: #f472b6;
   border-bottom: 1px solid #f472b6;
   text-decoration: underline;
 }
-
 a:active {
-  color: #a3e635; /* Tailwind lime-400, tıklandığında */
+  color: #a3e635;
 }
-
 a:visited {
-  color: #8b5cf6; /* Tailwind violet-500, ziyaret edilen link */
+  color: #8b5cf6;
 }
 
-/* Basit fade-in animasyonu */
 .fade-in {
   animation: fadeIn 1.2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
 }

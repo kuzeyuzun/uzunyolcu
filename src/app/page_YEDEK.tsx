@@ -27,48 +27,49 @@ export default function Home() {
               <span>Basit, erişilebilir ve güvenilir bilgi</span>
             </li>
           </ul>
-          {/* Kategoriler Butonları */}
+          {/* Animasyonlu Butonlar */}
           <nav className="flex flex-wrap gap-3 mt-8">
-            {/* 1. İslami Bilgiler */}
+            <a href="/about"
+              className="group relative inline-block px-6 py-2 font-semibold rounded-xl bg-gradient-to-r from-sky-400/70 to-sky-600/80 text-white shadow-lg transition-all duration-300 hover:scale-105 hover:from-sky-300 hover:to-sky-500 focus:outline-none focus:ring-2 focus:ring-sky-400"
+            >
+              <span className="relative z-10">Hakkımızda</span>
+              <span className="absolute top-0 left-0 w-full h-full rounded-xl opacity-0 group-hover:opacity-20 transition bg-white"></span>
+            </a>
+            <a href="mailto:seydauzun@gmail.com"
+              className="group relative inline-block px-6 py-2 font-semibold rounded-xl bg-gradient-to-r from-pink-400/70 to-pink-600/80 text-white shadow-lg transition-all duration-300 hover:scale-105 hover:from-pink-300 hover:to-pink-500 focus:outline-none focus:ring-2 focus:ring-pink-400"
+            >
+              <span className="relative z-10">İletişim</span>
+              <span className="absolute top-0 left-0 w-full h-full rounded-xl opacity-0 group-hover:opacity-20 transition bg-white"></span>
+            </a>
+            <a href="https://www.linkedin.com/comm/mynetwork/discovery-see-all?usecase=PEOPLE_FOLLOWS&followMember=kuzeyseydauzun"
+              target="_blank" rel="noopener"
+              className="group relative inline-block px-6 py-2 font-semibold rounded-xl bg-gradient-to-r from-lime-400/70 to-lime-600/80 text-white shadow-lg transition-all duration-300 hover:scale-105 hover:from-lime-300 hover:to-lime-500 focus:outline-none focus:ring-2 focus:ring-lime-400"
+            >
+              <span className="relative z-10">LinkedIn</span>
+              <span className="absolute top-0 left-0 w-full h-full rounded-xl opacity-0 group-hover:opacity-20 transition bg-white"></span>
+            </a>
             <a href="/islam"
-              className="group relative inline-block px-6 py-2 font-semibold rounded-xl bg-gradient-to-r from-green-400/80 to-emerald-500/90 text-white shadow-lg transition-all duration-300 hover:scale-105 hover:from-green-300 hover:to-emerald-400 focus:outline-none focus:ring-2 focus:ring-green-400"
+              className="group relative inline-block px-6 py-2 font-semibold rounded-xl bg-gradient-to-r from-green-400/70 to-green-600/80 text-white shadow-lg transition-all duration-300 hover:scale-105 hover:from-green-300 hover:to-green-500 focus:outline-none focus:ring-2 focus:ring-green-400"
             >
-              <span className="relative z-10">🕌 İslami Bilgiler</span>
+              <span className="relative z-10">İslam</span>
               <span className="absolute top-0 left-0 w-full h-full rounded-xl opacity-0 group-hover:opacity-20 transition bg-white"></span>
             </a>
-            {/* 2. İngilizce Akademi */}
-            <a href="/english"
-              className="group relative inline-block px-6 py-2 font-semibold rounded-xl bg-gradient-to-r from-blue-400/80 to-sky-500/90 text-white shadow-lg transition-all duration-300 hover:scale-105 hover:from-blue-300 hover:to-sky-400 focus:outline-none focus:ring-2 focus:ring-blue-400"
+            <a href="/en"
+              className="group relative inline-block px-6 py-2 font-semibold rounded-xl bg-gradient-to-r from-cyan-400/70 to-cyan-600/80 text-white shadow-lg transition-all duration-300 hover:scale-105 hover:from-cyan-300 hover:to-cyan-500 focus:outline-none focus:ring-2 focus:ring-cyan-400"
             >
-              <span className="relative z-10">🇬🇧 İngilizce Akademi</span>
+              <span className="relative z-10">English</span>
               <span className="absolute top-0 left-0 w-full h-full rounded-xl opacity-0 group-hover:opacity-20 transition bg-white"></span>
             </a>
-            {/* 3. Masa Başı Sağlık */}
-            <a href="/wellness"
-              className="group relative inline-block px-6 py-2 font-semibold rounded-xl bg-gradient-to-r from-fuchsia-400/80 to-pink-500/90 text-white shadow-lg transition-all duration-300 hover:scale-105 hover:from-fuchsia-300 hover:to-pink-400 focus:outline-none focus:ring-2 focus:ring-pink-400"
+            <a href="/blog"
+              className="group relative inline-block px-6 py-2 font-semibold rounded-xl bg-gradient-to-r from-purple-400/70 to-purple-600/80 text-white shadow-lg transition-all duration-300 hover:scale-105 hover:from-purple-300 hover:to-purple-500 focus:outline-none focus:ring-2 focus:ring-purple-400"
             >
-              <span className="relative z-10">💻 Masa Başı Sağlık</span>
+              <span className="relative z-10">Blog</span>
               <span className="absolute top-0 left-0 w-full h-full rounded-xl opacity-0 group-hover:opacity-20 transition bg-white"></span>
             </a>
-            {/* 4. 40+ Yaşam Rehberi */}
-            <a href="/over40"
-              className="group relative inline-block px-6 py-2 font-semibold rounded-xl bg-gradient-to-r from-yellow-400/80 to-orange-500/90 text-white shadow-lg transition-all duration-300 hover:scale-105 hover:from-yellow-300 hover:to-orange-400 focus:outline-none focus:ring-2 focus:ring-yellow-400"
+            <a href="/resources"
+              className="group relative inline-block px-6 py-2 font-semibold rounded-xl bg-gradient-to-r from-yellow-400/70 to-yellow-600/80 text-white shadow-lg transition-all duration-300 hover:scale-105 hover:from-yellow-300 hover:to-yellow-500 focus:outline-none focus:ring-2 focus:ring-yellow-400"
             >
-              <span className="relative z-10">🌟 40+ Yaşam Rehberi</span>
-              <span className="absolute top-0 left-0 w-full h-full rounded-xl opacity-0 group-hover:opacity-20 transition bg-white"></span>
-            </a>
-            {/* 5. Online Gelir */}
-            <a href="/income"
-              className="group relative inline-block px-6 py-2 font-semibold rounded-xl bg-gradient-to-r from-amber-400/80 to-yellow-600/90 text-white shadow-lg transition-all duration-300 hover:scale-105 hover:from-amber-300 hover:to-yellow-400 focus:outline-none focus:ring-2 focus:ring-amber-400"
-            >
-              <span className="relative z-10">💰 Online Gelir</span>
-              <span className="absolute top-0 left-0 w-full h-full rounded-xl opacity-0 group-hover:opacity-20 transition bg-white"></span>
-            </a>
-            {/* 6. Kendini Geliştir */}
-            <a href="/growth"
-              className="group relative inline-block px-6 py-2 font-semibold rounded-xl bg-gradient-to-r from-indigo-400/80 to-purple-500/90 text-white shadow-lg transition-all duration-300 hover:scale-105 hover:from-indigo-300 hover:to-purple-400 focus:outline-none focus:ring-2 focus:ring-indigo-400"
-            >
-              <span className="relative z-10">🎓 Kendini Geliştir</span>
+              <span className="relative z-10">Kaynaklar</span>
               <span className="absolute top-0 left-0 w-full h-full rounded-xl opacity-0 group-hover:opacity-20 transition bg-white"></span>
             </a>
           </nav>

@@ -2,12 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
+/* body ve fade-in aynı kalsın */
 body {
   background: #1a1c27 !important;
   color: #f1f5f9 !important;
   transition: background 0.3s, color 0.3s;
 }
 
+.fade-in {
+  animation: fadeIn 1.2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(24px);}
+  100% { opacity: 1; transform: translateY(0);}
+}
+
+/* a etiketinde color kaldırıldı, sadece transition bırakıldı */
 a {
   transition: color 0.2s, background 0.2s, border-bottom 0.2s;
   border-bottom: 1px dashed transparent;
@@ -19,15 +29,4 @@ a:hover, a:focus {
 }
 a:active {
   color: #a3e635 !important;
-}
-a:visited {
-  color: #8b5cf6 !important;
-}
-
-.fade-in {
-  animation: fadeIn 1.2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
-}
-@keyframes fadeIn {
-  0% { opacity: 0; transform: translateY(24px);}
-  100% { opacity: 1; transform: translateY(0);}
 }

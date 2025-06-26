@@ -3,15 +3,37 @@
 @tailwind utilities;
 
 body {
+  background: #171923; /* Koyu arka plan */
+  color: #f1f5f9; /* Açık metin */
   transition: background 0.3s, color 0.3s;
 }
 
-/* Scrollbar'ı koyulaştırmak için: */
-body::-webkit-scrollbar {
-  width: 10px;
-  background: #23232a;
+a {
+  color: #38bdf8; /* Tailwind sky-400, modern mavi */
+  transition: color 0.2s, border-bottom 0.2s;
+  border-bottom: 1px dashed transparent;
+  text-decoration: none;
 }
-body::-webkit-scrollbar-thumb {
-  background: #32323e;
-  border-radius: 5px;
+
+a:hover, a:focus {
+  color: #f472b6;   /* Tailwind pink-400, hover efekti */
+  border-bottom: 1px solid #f472b6;
+  text-decoration: underline;
+}
+
+a:active {
+  color: #a3e635; /* Tailwind lime-400, tıklandığında */
+}
+
+a:visited {
+  color: #8b5cf6; /* Tailwind violet-500, ziyaret edilen link */
+}
+
+/* Basit fade-in animasyonu */
+.fade-in {
+  animation: fadeIn 1.2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(24px);}
+  100% { opacity: 1; transform: translateY(0);}
 }

@@ -37,7 +37,7 @@ export default function AboutPage() {
       <div>
         <h3 className="text-2xl font-bold text-sky-300 mb-4">Kuzey Uzun Kimdir?</h3>
         <p className="mb-4 text-gray-200">
-          {`Ben Kuzey Uzun. Eğitim yolculuğumda beş farklı üniversite programı tamamladım; çok yönlü ve çok disiplinli bir bakış açısına sahibim. Aşağıda eğitim ve iş deneyimlerime dair detayları bulabilirsiniz:`}
+          {`Ben Kuzey Uzun. Eğitim yolculuğumda beş farklı üniversite programı tamamladım; çok yönlü ve çok disiplinli bir bakış açısına sahibim. Ayrıca üniversite dışında 100'e yakın, çoğu teknoloji ve yönetim alanında olmak üzere, çok sayıda sertifika programını da başarıyla tamamladım.`}
         </p>
         <ul className="list-disc list-inside text-gray-300 mb-4 space-y-1">
           <li>
@@ -57,7 +57,7 @@ export default function AboutPage() {
           </li>
         </ul>
         <p className="mb-4 text-gray-200">
-          {`İş yaşamımda Türkiye'nin önde gelen kurumlarında ve farklı sektörlerde önemli görevler üstlendim. Özellikle PttAVM'de Kıdemli Kategori Yöneticisi, Segovin Tekstil'de Export Sales Marketing Manager olarak stratejik planlamadan kategori yönetimine, satış ve pazarlamadan proje yönetimine kadar birçok alanda tecrübe kazandım. Ayrıca dijitalleşme, inovasyon, müşteri deneyimi ve sürekli gelişim odaklı projelerde aktif rol aldım.`}
+          {`Kariyerimde ise, uzun yıllar boyunca teknoloji ve perakende sektörünün lider şirketlerinde; kategori yöneticiliği, ürün yöneticiliği, mağaza yöneticiliği ve satış liderliği gibi pozisyonlarda görev aldım. Özellikle tüketici elektroniği ve bilgi teknolojileri alanlarında üst düzey yönetici rolleriyle önemli projeler yürüttüm, ekipler yönettim, stratejik planlamadan satışa kadar geniş bir yelpazede deneyim kazandım. E-ticaret, teknoloji yönetimi ve müşteri odaklı dijital dönüşüm projelerinde aktif rol aldım.`}
         </p>
         <p className="mb-4 text-gray-200">
           {`Farklı disiplinlerden beslenen bu yolculukta, eğitim, kişisel gelişim, sağlık, teknoloji ve manevi yaşam gibi alanlarda hayatı kolaylaştıran ve geliştiren içerikler üretmeyi misyon edindim. Uzun Yolcu'yu kurarken amacım, kendi gelişim yolculuğumdan aldığım ilhamı ve tecrübeleri herkesle paylaşmak, insanların hayatına değer katacak samimi ve güvenilir bir rehber ortamı sunmaktı.`}

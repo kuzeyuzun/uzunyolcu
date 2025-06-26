@@ -1,11 +1,11 @@
-import { LightningBoltIcon, GlobeAltIcon, CodeBracketIcon } from '@heroicons/react/24/outline';
+import { LightBulbIcon, GlobeAltIcon, CodeBracketIcon } from '@heroicons/react/24/outline';
 
 export default function Home() {
   return (
     <main className="min-h-screen flex flex-col items-center justify-center px-4 fade-in">
       <section className="bg-[#23263a]/90 rounded-2xl shadow-lg p-10 max-w-2xl w-full border border-[#292c3f]">
         <div className="flex flex-col items-center mb-6">
-          <LightningBoltIcon className="h-14 w-14 text-pink-400 animate-bounce mb-4" />
+          <LightBulbIcon width={56} height={56} className="text-pink-400 animate-bounce mb-4" />
           <h1 className="text-4xl font-extrabold tracking-tight text-sky-300 drop-shadow mb-2">
             UzunYolcu
           </h1>
@@ -13,11 +13,11 @@ export default function Home() {
         </div>
         <div className="flex flex-col gap-4 mb-6">
           <div className="flex items-center gap-2">
-            <CodeBracketIcon className="h-6 w-6 text-lime-400" />
+            <CodeBracketIcon width={24} height={24} className="text-lime-400" />
             <span className="text-base">Temiz kod ve açık kaynak odaklı içerikler</span>
           </div>
           <div className="flex items-center gap-2">
-            <GlobeAltIcon className="h-6 w-6 text-blue-400" />
+            <GlobeAltIcon width={24} height={24} className="text-blue-400" />
             <span className="text-base">Basit, erişilebilir ve güvenilir bilgi</span>
           </div>
         </div>

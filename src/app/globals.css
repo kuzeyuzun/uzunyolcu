@@ -1,11 +1,17 @@
-html, body {
-  height: 100%;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 body {
-  min-height: 100vh;
-  font-size: 18px;
-  /* Tailwind'den gelen font-sans ve renkler uygulanıyor */
+  transition: background 0.3s, color 0.3s;
 }
-a {
-  text-decoration: none;
+
+/* Scrollbar'ı koyulaştırmak için: */
+body::-webkit-scrollbar {
+  width: 10px;
+  background: #23232a;
+}
+body::-webkit-scrollbar-thumb {
+  background: #32323e;
+  border-radius: 5px;
 }

@@ -1,10 +1,9 @@
-import './globals.css'
-import type { ReactNode } from 'react';
+import './globals.css';
 
-export default function RootLayout({ children }: { children: ReactNode }) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="tr">
-      <body className="min-h-screen bg-gradient-to-br from-[#0f2027] via-[#2c5364] to-[#232526] text-slate-100 font-sans transition-colors duration-500">
+    <html lang="tr" className="dark">
+      <body className="bg-background text-text min-h-screen">
         {children}
       </body>
     </html>

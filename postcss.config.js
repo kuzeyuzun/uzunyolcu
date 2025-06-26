@@ -4,4 +4,3 @@ module.exports = {
     autoprefixer: {},
   },
 };
-// Herşey doğru görünüyor. Tailwind CSS ve Autoprefixer eklentileri başarıyla yapılandırıldı.

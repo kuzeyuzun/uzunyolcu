@@ -3,27 +3,27 @@
 @tailwind utilities;
 
 body {
-  background: #171923;
-  color: #f1f5f9;
+  background: #171923 !important;
+  color: #f1f5f9 !important;
   transition: background 0.3s, color 0.3s;
 }
 
 a {
-  color: #38bdf8;
+  color: #38bdf8 !important;
   transition: color 0.2s, border-bottom 0.2s;
   border-bottom: 1px dashed transparent;
   text-decoration: none;
 }
 a:hover, a:focus {
-  color: #f472b6;
+  color: #f472b6 !important;
   border-bottom: 1px solid #f472b6;
   text-decoration: underline;
 }
 a:active {
-  color: #a3e635;
+  color: #a3e635 !important;
 }
 a:visited {
-  color: #8b5cf6;
+  color: #8b5cf6 !important;
 }
 
 .fade-in {

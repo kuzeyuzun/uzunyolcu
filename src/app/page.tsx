@@ -1,5 +1,10 @@
 export default function Home() {
   return (
+    <div className="bg-red-600 text-white p-12 text-5xl font-bold text-center">
+      TAILWIND AKTİF Mİ? <span className="text-yellow-300">TEST</span>
+    </div>
+  );
+}
     <main className="min-h-screen flex items-center justify-center bg-[#1a1c27] px-4 fade-in">
       <section className="bg-[#23263a]/95 rounded-3xl shadow-2xl p-8 sm:p-16 max-w-5xl w-full border border-[#292c3f] flex flex-col md:flex-row gap-8 md:gap-12 items-center">
         {/* Sol Blok */}

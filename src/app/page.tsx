@@ -82,7 +82,7 @@ export default function Home() {
             Modern Yazılım ve Dijital İçerik Platformu
           </p>
           <p className="text-lg text-gray-400 font-normal text-center max-w-md">
-            Kod, topluluk ve bilgiye birlikte ulaşalım.
+            Kod, topluluk ve bilgiye birlikte ulaşalım. Ayrıca İslami bilgiler ve İngilizce eğitim de burada.... 
           </p>
         </div>
       </section>

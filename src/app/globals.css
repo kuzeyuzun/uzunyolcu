@@ -3,20 +3,18 @@
 @tailwind utilities;
 
 body {
-  background: #171923 !important;
+  background: #1a1c27 !important;
   color: #f1f5f9 !important;
   transition: background 0.3s, color 0.3s;
 }
 
 a {
-  color: #38bdf8 !important;
-  transition: color 0.2s, border-bottom 0.2s;
+  transition: color 0.2s, background 0.2s, border-bottom 0.2s;
   border-bottom: 1px dashed transparent;
   text-decoration: none;
 }
 a:hover, a:focus {
-  color: #f472b6 !important;
-  border-bottom: 1px solid #f472b6;
+  border-bottom: 1px solid #fff2;
   text-decoration: underline;
 }
 a:active {

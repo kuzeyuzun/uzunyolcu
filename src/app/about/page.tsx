@@ -16,7 +16,7 @@ export default function AboutPage() {
   );
 }
 
-"// Bu sayfa, UzunYolcu'nun kurucusu hakkında bilgi vermek için tasarlanmıştır.
+// Bu sayfa, UzunYolcu'nun kurucusu hakkında bilgi vermek için tasarlanmıştır.
 // Kuzey Seyda Uzun, yazılım geliştirici ve dijital içerik üreticisi olarak, öğrenmeyi ve öğretmeyi seven birisidir.
 // Amacı, sade ve güvenilir kaynaklar sunarak bilgiyi herkes için erişilebilir kılmaktır.
 // LinkedIn üzerinden takip edebilir, her türlü öneri ve iletişim için e-posta   gönderebilirsiniz.

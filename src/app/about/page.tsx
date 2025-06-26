@@ -78,10 +78,10 @@ export default function AboutPage() {
         <p className="text-gray-400">
           İletişim:{" "}
           <a
-            href="mailto:seydauzun@gmail.com"
+            href="mailto:uzunyolcubilgievreni@gmail.com"
             className="text-amber-400 hover:underline"
           >
-            seydauzun@gmail.com
+            uzunyolcubilgievreni@gmail.com
           </a>
         </p>
       </div>

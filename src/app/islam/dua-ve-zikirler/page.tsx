@@ -2,217 +2,168 @@ import Link from "next/link";
 
 export default function DuaVeZikirlerPage() {
   return (
-    <section className="max-w-2xl mx-auto mt-10 p-8 rounded-xl bg-[#23263a] shadow-lg border border-[#292c3f]">
-      {/* Üst Menü */}
-      <div className="flex flex-wrap justify-between items-center mb-8 gap-2">
-        <div className="flex gap-2">
-          <Link
-            href="/"
-            className="px-4 py-2 bg-emerald-500 text-white rounded-lg shadow hover:bg-emerald-600 transition font-semibold"
-          >
-            Ana Sayfa
-          </Link>
-          <Link
-            href="/islam"
-            className="px-4 py-2 bg-sky-500 text-white rounded-lg shadow hover:bg-sky-600 transition font-semibold"
-          >
-            İslam Menüsü
-          </Link>
+    <main className="min-h-screen flex items-center justify-center bg-[#1a1c27] px-2 fade-in">
+      <section className="bg-[#23263a]/95 rounded-3xl shadow-2xl p-6 sm:p-12 max-w-2xl w-full border border-[#292c3f] flex flex-col gap-8">
+        {/* Üst Menü */}
+        <div className="flex flex-wrap justify-between items-center gap-2 mb-2">
+          <div className="flex gap-2">
+            <Link
+              href="/"
+              className="px-4 py-2 bg-emerald-500 text-white rounded-lg shadow hover:bg-emerald-600 transition font-semibold"
+            >
+              Ana Sayfa
+            </Link>
+            <Link
+              href="/islam"
+              className="px-4 py-2 bg-sky-500 text-white rounded-lg shadow hover:bg-sky-600 transition font-semibold"
+            >
+              İslam Menüsü
+            </Link>
+          </div>
+          <h1 className="text-2xl font-extrabold text-indigo-200 flex items-center gap-2">
+            <span>🙏</span> Dua ve Zikirler
+          </h1>
         </div>
-        <h1 className="text-2xl font-bold text-emerald-300">Dua ve Zikirler</h1>
-      </div>
 
-      <p className="mb-4 text-gray-200">
-        {`Dua ve zikir, Müslüman’ın Allah’a yakınlaşmasının en güzel yollarından biridir. Dua, kulun Rabbine içini açması ve yardım dilemesidir; zikir ise Allah'ı anarak kalbi huzura eriştirmektir. Bu sayfada namazda okunan dualardan mübarek gün ve gecelerde yapılacak dualara, genel olarak ruhu huzura kavuşturan dualara ve zikir örneklerine kadar birçok faydalı bilgi bulabilirsiniz.`}
-      </p>
+        <div className="bg-[#181a27] p-4 rounded-xl text-gray-200 text-center text-base mb-2">
+          Dua ve zikir, kalbi huzura kavuşturur, Allah’a yakınlaşmanın en güzel yoludur. Bu sayfada namaz dualarından günlük zikir ve özel gün dualarına kadar birçok örnek ve anlam bulabilirsin.
+        </div>
 
-      <h2 className="text-xl font-semibold text-sky-300 mb-3 mt-6">Namaz Duaları ve Anlamları</h2>
-      <ul className="list-disc list-inside text-gray-300 mb-6 space-y-3">
-        <li>
-          <strong>Sübhâneke:</strong>
-          <div className="mt-1 text-emerald-200">
-            {`سُبْحَانَكَ اللّهُمَّ وَبِحَمْدِكَ وَتَبَارَكَ اسْمُكَ وَتَعَالَى جَدُّكَ وَلَا إِلٰهَ غَيْرُكَ`}
-          </div>
-          <span className="block text-sm text-gray-400 mt-1">
-            {`Allah’ım! Seni her türlü noksanlıktan tenzih ederim. Senin adın mübarektir, yüceliğin sonsuzdur. Senden başka ilah yoktur.`}
-          </span>
-        </li>
-        <li>
-          <strong>Ettehiyyâtü:</strong>
-          <div className="mt-1 text-emerald-200">
-            {`اَلتَّحِيَّاتُ لِلّٰهِ وَالصَّلَوَاتُ وَالطَّيِّبَاتُ...`}
-          </div>
-          <span className="block text-sm text-gray-400 mt-1">
-            {`Bütün sözlü, fiilî ve maddî ibadetler Allah’a mahsustur... (tam metin uzun olduğu için kısaltılmıştır)`} 
-          </span>
-        </li>
-        <li>
-          <strong>Salli ve Barik Duaları:</strong>
-          <div className="mt-1 text-emerald-200">
-            {`اللَّهُمَّ صَلِّ عَلَى مُحَمَّدٍ وَعَلَى آلِ مُحَمَّدٍ...`}
-          </div>
-          <span className="block text-sm text-gray-400 mt-1">
-            {`Allah’ım! Muhammed’e ve onun âline salat eyle... (tam metin uzun olduğu için kısaltılmıştır)`} 
-          </span>
-        </li>
-        <li>
-          <strong>Rabbena Duaları:</strong>
-          <div className="mt-1 text-emerald-200">
-            {`رَبَّنَا آتِنَا فِي الدُّنْيَا حَسَنَةً...`}
-          </div>
-          <span className="block text-sm text-gray-400 mt-1">
-            {`Rabbimiz! Bize dünyada da güzellik, ahirette de güzellik ver ve bizi cehennem azabından koru.`}
-          </span>
-        </li>
-        <li>
-          <strong>Kunut Duaları:</strong>
-          <div className="mt-1 text-emerald-200">
-            {`اللهم إنا نستعينك...`}
-          </div>
-          <span className="block text-sm text-gray-400 mt-1">
-            {`Allah’ım! Senden yardım isteriz... (tam metin uzun olduğu için kısaltılmıştır)`} 
-          </span>
-        </li>
-      </ul>
+        {/* Namaz Duaları */}
+        <section>
+          <h2 className="text-lg font-semibold text-emerald-300 mb-2">Namaz Duaları</h2>
+          <ul className="list-disc list-inside text-gray-300 space-y-2">
+            <li>
+              <strong>Sübhâneke</strong>{" "}
+              <span className="block text-emerald-200 text-sm mt-1">سُبْحَانَكَ اللّهُمَّ وَبِحَمْدِكَ...</span>
+              <span className="block text-xs text-gray-400">“Allah’ım! Seni tenzih ederim...”</span>
+            </li>
+            <li>
+              <strong>Ettehiyyâtü</strong>{" "}
+              <span className="block text-emerald-200 text-sm mt-1">اَلتَّحِيَّاتُ لِلّٰهِ وَالصَّلَوَاتُ...</span>
+              <span className="block text-xs text-gray-400">“Bütün ibadetler Allah’a mahsustur...”</span>
+            </li>
+            <li>
+              <strong>Salli ve Barik</strong>{" "}
+              <span className="block text-emerald-200 text-sm mt-1">اللَّهُمَّ صَلِّ عَلَى مُحَمَّدٍ...</span>
+              <span className="block text-xs text-gray-400">“Allah’ım! Muhammed’e ve âline salat eyle...”</span>
+            </li>
+            <li>
+              <strong>Rabbena Duaları</strong>{" "}
+              <span className="block text-emerald-200 text-sm mt-1">رَبَّنَا آتِنَا فِي الدُّنْيَا حَسَنَةً...</span>
+              <span className="block text-xs text-gray-400">“Rabbimiz! Bize dünyada da güzellik ver...”</span>
+            </li>
+            <li>
+              <strong>Kunut Duaları</strong>{" "}
+              <span className="block text-emerald-200 text-sm mt-1">اللهم إنا نستعينك...</span>
+              <span className="block text-xs text-gray-400">“Allah’ım! Senden yardım isteriz...”</span>
+            </li>
+          </ul>
+        </section>
 
-      <h2 className="text-xl font-semibold text-sky-300 mb-3">Mübarek Gün ve Gecelerde Okunacak Dualar</h2>
-      <ul className="list-disc list-inside text-gray-300 mb-6 space-y-3">
-        <li>
-          <strong>Recep, Şaban, Ramazan Ayı Duaları:</strong>
-          <div className="mt-1 text-emerald-200">{`اللهم بارك لنا في رجب وشعبان وبلغنا رمضان`}</div>
-          <span className="block text-sm text-gray-400 mt-1">
-            {`Allah’ım! Recep ve Şaban ayını bize mübarek kıl, bizi Ramazan’a ulaştır.`}
-          </span>
-        </li>
-        <li>
-          <strong>Kandil ve Berat Gecesi Duası:</strong>
-          <div className="mt-1 text-emerald-200">{`اللهم إنك عفو كريم تحب العفو فاعف عني`}</div>
-          <span className="block text-sm text-gray-400 mt-1">
-            {`Allah’ım! Sen affedicisin, affetmeyi seversin, beni de affet.`}
-          </span>
-        </li>
-        <li>
-          <strong>İstiğfar (Bağışlanma) Duası:</strong>
-          <div className="mt-1 text-emerald-200">{`أستغفر الله العظيم وأتوب إليه`}</div>
-          <span className="block text-sm text-gray-400 mt-1">
-            {`Büyük Allah’tan bağışlanma diler, O’na tövbe ederim.`}
-          </span>
-        </li>
-      </ul>
+        {/* Özel Gün ve Geceler */}
+        <section>
+          <h2 className="text-lg font-semibold text-sky-300 mb-2">Mübarek Gün ve Geceler</h2>
+          <ul className="list-disc list-inside text-gray-300 space-y-2">
+            <li>
+              <strong>Recep-Şaban-Ramazan:</strong>{" "}
+              <span className="text-emerald-200 ml-1">اللهم بارك لنا في رجب وشعبان وبلغنا رمضان</span>
+              <span className="block text-xs text-gray-400">“Recep ve Şaban’ı mübarek kıl, bizi Ramazan’a ulaştır.”</span>
+            </li>
+            <li>
+              <strong>Kandil/Berat Duası:</strong>{" "}
+              <span className="text-emerald-200 ml-1">اللهم إنك عفو كريم تحب العفو فاعف عني</span>
+              <span className="block text-xs text-gray-400">“Allah’ım! Sen affedicisin, beni de affet.”</span>
+            </li>
+            <li>
+              <strong>İstiğfar (Bağışlanma):</strong>{" "}
+              <span className="text-emerald-200 ml-1">أستغفر الله العظيم وأتوب إليه</span>
+              <span className="block text-xs text-gray-400">“Büyük Allah’tan bağışlanma dilerim.”</span>
+            </li>
+          </ul>
+        </section>
 
-      <h2 className="text-xl font-semibold text-sky-300 mb-3">Günlük Hayatta ve Zor Zamanlarda Okunacak Dualar</h2>
-      <ul className="list-disc list-inside text-gray-300 mb-6 space-y-3">
-        <li>
-          <strong>Hastalık ve Şifa Duası:</strong>
-          <div className="mt-1 text-emerald-200">{`اللهم رب الناس أذهب البأس، اشف أنت الشافي`}</div>
-          <span className="block text-sm text-gray-400 mt-1">
-            {`Ey insanların Rabbi! Sıkıntıyı gider, şifa ver, şifa ancak sendendir.`}
-          </span>
-        </li>
-        <li>
-          <strong>Darlık ve Sıkıntı Anında:</strong>
-          <div className="mt-1 text-emerald-200">{`حسبي الله لا إله إلا هو عليه توكلت وهو رب العرش العظيم`}</div>
-          <span className="block text-sm text-gray-400 mt-1">
-            {`Allah bana yeter, O’ndan başka ilah yoktur. O’na tevekkül ettim, O büyük Arş’ın Rabbidir.`}
-          </span>
-        </li>
-        <li>
-          <strong>Huzur ve Korunma Duası:</strong>
-          <div className="mt-1 text-emerald-200">{`اللهم إني أعوذ بك من الهم والحزن ...`}</div>
-          <span className="block text-sm text-gray-400 mt-1">
-            {`Allah’ım! Kederden, üzüntüden, acizlikten, tembellikten, korkaklıktan, cimrilikten ve borcun galip gelmesinden sana sığınırım.`}
-          </span>
-        </li>
-        <li>
-          <strong>İstihare Duası:</strong>
-          <div className="mt-1 text-emerald-200">{`اللهم إني استخيرك بعلمك ...`}</div>
-          <span className="block text-sm text-gray-400 mt-1">
-            {`Allah’ım! Senin ilminle hayırlı olanı dilerim... (tam metin uzun olduğu için kısaltılmıştır)`} 
-          </span>
-        </li>
-      </ul>
+        {/* Günlük ve Zor Zaman Duaları */}
+        <section>
+          <h2 className="text-lg font-semibold text-fuchsia-300 mb-2">Günlük & Zor Zaman Duaları</h2>
+          <ul className="list-disc list-inside text-gray-300 space-y-2">
+            <li>
+              <strong>Şifa Duası:</strong>{" "}
+              <span className="text-emerald-200 ml-1">اللهم رب الناس أذهب البأس، اشف أنت الشافي</span>
+              <span className="block text-xs text-gray-400">“Ey insanların Rabbi! Sıkıntıyı gider, şifa ver...”</span>
+            </li>
+            <li>
+              <strong>Sıkıntı Anında:</strong>{" "}
+              <span className="text-emerald-200 ml-1">حسبي الله لا إله إلا هو عليه توكلت...</span>
+              <span className="block text-xs text-gray-400">“Allah bana yeter, O’na tevekkül ettim...”</span>
+            </li>
+            <li>
+              <strong>İstihare Duası:</strong>{" "}
+              <span className="text-emerald-200 ml-1">اللهم إني استخيرك بعلمك ...</span>
+              <span className="block text-xs text-gray-400">“Allah’ım! Senin ilminle hayırlı olanı dilerim...”</span>
+            </li>
+          </ul>
+        </section>
 
-      <h2 className="text-xl font-semibold text-sky-300 mb-3">Faziletli Zikir ve Tesbihler</h2>
-      <ul className="list-disc list-inside text-gray-300 mb-6 space-y-3">
-        <li>
-          <strong>Subhanallah, Elhamdülillah, Allahu Ekber:</strong>
-          <span className="block text-sm text-gray-400 mt-1">
-            {`Her namaz sonrası 33’er defa “Sübhânallah”, “Elhamdülillah”, “Allahu Ekber” demek Peygamberimizin tavsiye ettiği önemli zikirlerdendir.`}
-          </span>
-        </li>
-        <li>
-          <strong>La ilahe illallah:</strong>
-          <span className="block text-sm text-gray-400 mt-1">
-            {`Tevhidin özü olan bu kelimeyi sıkça tekrarlamak kalbi arındırır, imanı tazeler.`}
-          </span>
-        </li>
-        <li>
-          <strong>Estağfirullah:</strong>
-          <span className="block text-sm text-gray-400 mt-1">
-            {`Günahların affı için sıkça “Estağfirullah” demek tavsiye edilmiştir.`}
-          </span>
-        </li>
-        <li>
-          <strong>Hasbiyallahü la ilahe illa hüve:</strong>
-          <span className="block text-sm text-gray-400 mt-1">
-            {`Zor anlarda Allah’a sığınmayı ifade eden faziletli bir zikirdir.`}
-          </span>
-        </li>
-      </ul>
+        {/* Zikir ve Tesbihler */}
+        <section>
+          <h2 className="text-lg font-semibold text-purple-300 mb-2">Faziletli Zikirler</h2>
+          <ul className="list-disc list-inside text-gray-300 space-y-2">
+            <li>
+              <strong>Subhanallah, Elhamdülillah, Allahu Ekber</strong>
+              <span className="block text-xs text-gray-400">Her namaz sonrası 33’er defa okunması tavsiye edilir.</span>
+            </li>
+            <li>
+              <strong>La ilahe illallah</strong>
+              <span className="block text-xs text-gray-400">Tevhidin özü, sıkça tekrar edilmesi kalbi arındırır.</span>
+            </li>
+            <li>
+              <strong>Estağfirullah</strong>
+              <span className="block text-xs text-gray-400">Bağışlanma için gün içinde tekrar edilir.</span>
+            </li>
+            <li>
+              <strong>Hasbiyallahü la ilahe illa hüve</strong>
+              <span className="block text-xs text-gray-400">Zor anlarda Allah’a sığınmanın zikridir.</span>
+            </li>
+          </ul>
+        </section>
 
-      <h2 className="text-xl font-semibold text-sky-300 mb-3">Duanın Kabul Olduğu Zamanlar</h2>
-      <ul className="list-disc list-inside text-gray-300 mb-6 space-y-2">
-        <li>
-          <strong>Seher vakitleri (gece son üçte biri)</strong>
-        </li>
-        <li>
-          <strong>Farz namazlardan sonra</strong>
-        </li>
-        <li>
-          <strong>Cuma günü ve cuma saati</strong>
-        </li>
-        <li>
-          <strong>Ezandan ikamet getirilinceye kadar olan vakit</strong>
-        </li>
-        <li>
-          <strong>Oruçlunun iftar anı</strong>
-        </li>
-        <li>
-          <strong>Yağmur yağarken</strong>
-        </li>
-        <li>
-          <strong>Hac ve umre esnasında Arafat’ta vakfe anı</strong>
-        </li>
-        <li>
-          <strong>Anne-babanın evladı için duası</strong>
-        </li>
-        <li>
-          <strong>Hasta ve mazlumun duası</strong>
-        </li>
-      </ul>
-      <p className="mb-4 text-gray-400 text-sm">
-        {`Dua ederken samimi olmak, haramdan kaçınmak, Allah’a güvenmek ve aceleci olmamak önemlidir. Peygamberimiz (s.a.s.) şöyle buyurmuştur: "Kula duası ya dünyada hemen verilir, ya ahirete bırakılır ya da bir kötülüğü ondan savar." (Tirmizî, Deavat, 145)`} 
-      </p>
+        {/* Bilgilendirici kutu */}
+        <div className="bg-[#1f2133] rounded-lg p-4 text-xs text-gray-400 mt-1">
+          <strong>Dua Adabı:</strong> Dua ederken samimi olmak, haramdan kaçınmak, Allah’a güvenmek ve aceleci olmamak önemlidir. Peygamberimiz şöyle buyurmuştur: <em>“Kula duası ya dünyada hemen verilir, ya ahirete bırakılır ya da bir kötülüğü ondan savar.”</em>
+        </div>
 
-      <h2 className="text-xl font-semibold text-sky-300 mb-3">Kaynaklar ve Daha Fazlası</h2>
-      <ul className="list-disc list-inside text-gray-400 mb-2 space-y-1 text-sm">
-        <li>
-          <a href="https://www.diyanet.gov.tr/" target="_blank" rel="noopener" className="underline hover:text-emerald-400">
-            Diyanet İşleri Başkanlığı Resmi Web Sitesi
-          </a>
-        </li>
-        <li>
-          <a href="https://dua.diyanet.gov.tr/" target="_blank" rel="noopener" className="underline hover:text-emerald-400">
-            Diyanet Dua Portalı
-          </a>
-        </li>
-        <li>
-          <a href="https://islamansiklopedisi.org.tr/dua" target="_blank" rel="noopener" className="underline hover:text-emerald-400">
-            TDV İslam Ansiklopedisi - Dua
-          </a>
-        </li>
-      </ul>
-      <p className="text-gray-400 text-xs">{`Bu sayfadaki dualar ve zikirler Diyanet İşleri Başkanlığı, TDV İslam Ansiklopedisi ve güvenilir İslami kaynaklardan derlenmiştir.`}</p>
-    </section>
+        {/* Duanın Kabul Olduğu Zamanlar */}
+        <section>
+          <h2 className="text-base font-semibold text-emerald-200 mt-2 mb-1">Duanın Kabul Olduğu Vakitler</h2>
+          <ul className="list-disc list-inside text-gray-300 mb-4 space-y-1">
+            <li>Seher vakitleri (gecenin son üçte biri)</li>
+            <li>Farz namazlardan sonra</li>
+            <li>Cuma günü ve cuma saati</li>
+            <li>Oruçlunun iftar anı, yağmur yağarken</li>
+            <li>Anne-babanın evladı için duası</li>
+            <li>Hasta ve mazlumun duası</li>
+          </ul>
+        </section>
+
+        {/* Kaynaklar */}
+        <section>
+          <h2 className="text-base font-semibold text-sky-200">Kaynaklar & Daha Fazlası</h2>
+          <ul className="list-disc list-inside text-gray-400 mb-1 space-y-1 text-sm">
+            <li>
+              <a href="https://dua.diyanet.gov.tr/" target="_blank" rel="noopener" className="underline hover:text-emerald-400">
+                Diyanet Dua Portalı
+              </a>
+            </li>
+            <li>
+              <a href="https://islamansiklopedisi.org.tr/dua" target="_blank" rel="noopener" className="underline hover:text-emerald-400">
+                TDV İslam Ansiklopedisi - Dua
+              </a>
+            </li>
+          </ul>
+        </section>
+        <p className="text-xs text-gray-500 text-center">Sayfadaki dualar ve zikirler güvenilir İslami kaynaklardan derlenmiştir.</p>
+      </section>
+    </main>
   );
 }

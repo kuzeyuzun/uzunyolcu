@@ -3,37 +3,37 @@ import Link from "next/link";
 export default function IslamMainPage() {
   const sections = [
     {
-      title: "Elifba Öğrenimi",
+      title: `Elifba Öğrenimi`,
       emoji: "🔠",
       href: "/islam/elifba",
       gradient: "from-emerald-400/80 to-green-500/90",
     },
     {
-      title: "Kur’an-ı Kerim",
+      title: `Kur’an-ı Kerim`,
       emoji: "📖",
       href: "/islam/kuran-i-kerim",
       gradient: "from-sky-400/80 to-blue-500/90",
     },
     {
-      title: "Peygamber Mucizeleri",
+      title: `Peygamber Mucizeleri`,
       emoji: "🕋",
       href: "/islam/peygamber-mucizeleri",
       gradient: "from-yellow-400/80 to-amber-500/90",
     },
     {
-      title: "Ayetler Hazinesi",
+      title: `Ayetler Hazinesi`,
       emoji: "💎",
       href: "/islam/ayetler-hazinesi",
       gradient: "from-fuchsia-400/80 to-pink-500/90",
     },
     {
-      title: "Hadis-i Şerifler",
+      title: `Hadis-i Şerifler`,
       emoji: "📜",
       href: "/islam/hadisler-hazinesi",
       gradient: "from-orange-400/80 to-amber-500/90",
     },
     {
-      title: "Dua ve Zikirler",
+      title: `Dua ve Zikirler`,
       emoji: "🙏",
       href: "/islam/dua-ve-zikirler",
       gradient: "from-indigo-400/80 to-purple-500/90",
@@ -49,16 +49,16 @@ export default function IslamMainPage() {
             href="/"
             className="px-4 py-2 rounded-lg bg-emerald-500 text-white font-semibold shadow hover:bg-emerald-600 transition"
           >
-            Ana Sayfa
+            {`Ana Sayfa`}
           </Link>
         </div>
         <div className="flex flex-col items-center gap-3">
           <span className="text-5xl">🕌</span>
           <h1 className="text-4xl md:text-5xl font-extrabold text-emerald-300 drop-shadow mb-2">
-            İslami Bilgiler
+            {`İslami Bilgiler`}
           </h1>
           <p className="text-lg text-gray-300 text-center max-w-xl">
-            Kur’an’dan hadis ve dualara, temel dini bilgileri kolayca keşfet.
+            {`Kur’an’dan hadis ve dualara, temel dini bilgileri kolayca keşfet.`}
           </p>
         </div>
         <nav className="flex flex-wrap justify-center gap-4 mt-4">
@@ -80,7 +80,7 @@ export default function IslamMainPage() {
             href="/"
             className="px-5 py-2 rounded-lg bg-emerald-500 text-white font-semibold shadow hover:bg-emerald-600 transition"
           >
-            Ana Sayfa
+            {`Ana Sayfa`}
           </Link>
         </div>
       </section>
